@@ -1,26 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shabda Milan</title>
-    <link rel="stylesheet" href="index.css">
-</head>
-<body>
-    <h1>Select the Level</h1><br>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="container">
+    <img src="images/tree.png" />
 
-    <div class="button-container">
+    <div class="content">
+      <h1>Select the Level</h1>
+      <br />
+      <div class="button-container">
         <button type="button" class="easy level">Easy</button>
         <button type="button" class="medium level">Medium</button>
         <button type="button" class="hard level">Hard</button>
-    </div><br>
-    
-    <h1>Select the Category:</h1><br>
-    <select name="category" id="category">
-        <option value="volvo">V</option>
-        <option value="saab">Saab</option>
-        <option value="mercedes">Mercedes</option>
-        <option value="audi">Audi</option>
+      </div>
+      <br />
+
+      <h1>Select the Category:</h1>
+      <br />
+      <div class="container">
+        <select name="category" id="category">
+          <option value="volvo">V</option>
+          <option value="saab">Saab</option>
+          <option value="mercedes">Mercedes</option>
+          <option value="audi">Audi</option>
         </select>
-</body>
+        
+      </div>
+      <button type="button" class="start" >Start</button>
+      
+    </div>
+</div>
+  </body>
 </html>

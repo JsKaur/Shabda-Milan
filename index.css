@@ -34,3 +34,48 @@ h1 {
 .level:hover{
     background: #c9ef9a;
 }
+
+.container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+   
+}
+
+select {
+    width: 200px; /* Set a fixed width */
+    padding: 10px; /* Add padding for better appearance */
+    font-size: 16px; /* Increase font size */
+    font-weight: bold;
+    border: 2px solid #a8e063; /* Border color */
+    border-radius: 10px; /* Rounded corners */
+    background: linear-gradient(to bottom, #d7f726, #a8e063); /* Gradient background */
+    color: #333; /* Text color */
+    cursor: pointer;
+    outline: none;
+}
+
+/* Styling for dropdown options */
+select option {
+    background: #fff; /* White background for better readability */
+    color: #333; /* Text color */
+    font-size: 16px;
+    padding: 10px;
+}
+
+.start {
+   position:relative;
+   top:35px;
+   left:35%;
+    padding: 10px 40px;
+    font-size: 1.2rem;
+    background: linear-gradient(rgb(76, 220, 228), rgb(94, 67, 193), rgb(71, 11, 113));
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.start:hover {
+    background: rgb(143, 143, 227);
+}
