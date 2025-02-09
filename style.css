@@ -1,0 +1,100 @@
+body {
+    background-color: #fdf6ed;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Disable horizontal scroll */
+}
+
+.content {
+    position: relative;
+    width: 100%;
+    height: 300vh; 
+}
+
+h1 {
+    font-size: 3rem;
+    font-family: "Roboto Slab", serif;
+    background: linear-gradient(rgb(76, 220, 228), rgb(94, 67, 193), rgb(71, 11, 113));
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-top: 15px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 20px;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 0px;
+}
+
+.logo {
+    display: inline-block;
+    vertical-align: middle; /* Adjusts vertical alignment */
+    height: 200px;
+    width: 400px;
+}
+
+.road-image {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1; /* Ensure the road stays behind other elements */
+}
+
+
+
+.car-image {
+    position: absolute;
+    /* width: 294px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out; */
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.car-image-1 {
+    left: 50%;
+    top: 10%;
+    transform: translateX(-50%);
+    width:250px;
+}
+
+.car-image-2 {
+    left: 50%;
+    top: 30%;
+    transform: translateX(-50%);
+    width:350px;
+}
+
+.car-image-3 {
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%);
+    width:350px;
+}
+
+.visible {
+    opacity: 1;
+   
+}
+
+.start {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 200px; /* Adjust this value to fit within the road image */
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background: linear-gradient(rgb(76, 220, 228), rgb(94, 67, 193), rgb(71, 11, 113));
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.start:hover {
+    background: rgb(143, 143, 227);
+}

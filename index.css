@@ -1,0 +1,36 @@
+body {
+    background-color: #fdf6ed;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Disable horizontal scroll */
+}
+
+h1 {
+    font-size: 3rem;
+    font-family: "Roboto Slab", serif;
+    background: linear-gradient(rgb(76, 220, 228), rgb(94, 67, 193), rgb(71, 11, 113));
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-top: 15px;
+    margin-left: 20px;
+    text-align: center;
+}
+
+.button-container{
+    display:flex;
+   justify-content: center;
+   gap:10px;
+}
+
+.level{
+    border:none;
+    background: linear-gradient(to bottom, #d7f726, #a8e063);
+    font-weight: bold;
+    padding:13px;
+    border-radius:10px;
+   
+}
+
+.level:hover{
+    background: #c9ef9a;
+}
