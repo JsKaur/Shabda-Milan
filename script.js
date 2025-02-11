@@ -44,44 +44,11 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
-    let audio = document.getElementById("background-audio");
 
-    // Play audio only after user clicks anywhere on the page
-    // document.body.addEventListener("click", function () {
-    //     if (audio.paused) {
-    //         audio.play().catch(error => console.log("Autoplay blocked:", error));
-    //     }
-    // });
 
-    audio.muted = false;
-    let playPromise = audio.play();
-
-    // Handle autoplay restrictions
-    if (playPromise !== undefined) {
-        playPromise.catch(error => {
-            console.log("Autoplay blocked, waiting for user interaction.");
-            // Add a click event to play when the user interacts
-            document.body.addEventListener("click", function () {
-                audio.play();
-            }, { once: true });
-        });
-    }
 });
 
 function handleStart(){
-    let audio = document.getElementById("background-audio");
-
-    if (!audio.paused) {
-        audio.pause();
-        audio.currentTime = 0;
-    }
-
     // Redirect to index.html
     window.location.href = "index.html";
 }
-
-document.body.addEventListener("click", function () {
-    let audio = document.getElementById("background-audio");
-    audio.muted = false;  // Unmute audio after user clicks
-    audio.play();
-});
