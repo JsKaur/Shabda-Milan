@@ -1,0 +1,155 @@
+{
+    "fruits": {
+      "easy": {
+        "images": [
+          "images/fruits/apple.jpg",
+          "images/fruits/banana.jpg",
+          "images/fruits/mango.png"
+        ],
+        "sanskrit_names": [
+          "सेब",
+          "केला",
+          "आम"
+        ]
+      },
+      "medium": {
+        "images": [
+          "orange.jpg",
+          "grape.jpg",
+          "pineapple.jpg"
+        ],
+        "sanskrit_names": [
+          "संतरा",
+          "अंगूर",
+          "अनानास"
+        ]
+      },
+      "hard": {
+        "images": [
+          "pomegranate.jpg",
+          "papaya.jpg",
+          "jackfruit.jpg"
+        ],
+        "sanskrit_names": [
+          "अनार",
+          "पपीता",
+          "कटहल"
+        ]
+      }
+    },
+    "vegetables": {
+      "easy": {
+        "images": [
+          "carrot.jpg",
+          "potato.jpg",
+          "tomato.jpg"
+        ],
+        "sanskrit_names": [
+          "गाजर",
+          "आलू",
+          "टमाटर"
+        ]
+      },
+      "medium": {
+        "images": [
+          "broccoli.jpg",
+          "spinach.jpg",
+          "cauliflower.jpg"
+        ],
+        "sanskrit_names": [
+          "ब्रोकोली",
+          "पालक",
+          "फूलगोभी"
+        ]
+      },
+      "hard": {
+        "images": [
+          "artichoke.jpg",
+          "asparagus.jpg",
+          "okra.jpg"
+        ],
+        "sanskrit_names": [
+          "काँटेदार फूल",
+          "शतावरी",
+          "भिंडी"
+        ]
+      }
+    },
+    "flowers": {
+      "easy": {
+        "images": [
+          "rose.jpg",
+          "lotus.jpg",
+          "sunflower.jpg"
+        ],
+        "sanskrit_names": [
+          "गुलाब",
+          "कमल",
+          "सूरजमुखी"
+        ]
+      },
+      "medium": {
+        "images": [
+          "orchid.jpg",
+          "daisy.jpg",
+          "tulip.jpg"
+        ],
+        "sanskrit_names": [
+          "ऑर्किड",
+          "गुलबहार",
+          "ट्यूलिप"
+        ]
+      },
+      "hard": {
+        "images": [
+          "lily.jpg",
+          "hibiscus.jpg",
+          "marigold.jpg"
+        ],
+        "sanskrit_names": [
+          "कुमुद",
+          "गुड़हल",
+          "गेंदा"
+        ]
+      }
+    },
+    "animals": {
+      "easy": {
+        "images": [
+          "dog.jpg",
+          "cat.jpg",
+          "cow.jpg"
+        ],
+        "sanskrit_names": [
+          "कुत्ता",
+          "बिल्ली",
+          "गाय"
+        ]
+      },
+      "medium": {
+        "images": [
+          "elephant.jpg",
+          "lion.jpg",
+          "tiger.jpg"
+        ],
+        "sanskrit_names": [
+          "हाथी",
+          "सिंह",
+          "बाघ"
+        ]
+      },
+      "hard": {
+        "images": [
+          "giraffe.jpg",
+          "kangaroo.jpg",
+          "koala.jpg"
+        ],
+        "sanskrit_names": [
+          "गिराफ़",
+          "कंगारू",
+          "कोआला"
+        ]
+      }
+    }
+  }
+  
