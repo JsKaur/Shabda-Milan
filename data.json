@@ -1,17 +1,23 @@
 {
-    "fruits": {
-      "easy": {
+  "fruits": {
+    "easy": {
         "images": [
-          "images/fruits/apple.jpg",
-          "images/fruits/banana.jpg",
-          "images/fruits/mango.png"
+            "apple.jpg",
+            "banana.jpg",
+            "mango.png"
         ],
         "sanskrit_names": [
-          "सेब",
-          "केला",
-          "आम"
-        ]
-      },
+            "सेव",
+            "कदलीफलम्",
+            "आम"
+        ],
+        "pairs": {
+            "सेव": "apple.jpg",
+            "कदलीफलम्": "banana.jpg",
+            "आम": "mango.png"
+        }
+    }
+,
       "medium": {
         "images": [
           "orange.jpg",
