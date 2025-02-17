@@ -4,57 +4,78 @@
         "images": [
             "apple.jpg",
             "banana.jpg",
-            "mango.png"
+            "mango.png"         
         ],
         "sanskrit_names": [
-            "सेव",
+            "सेवम्",
             "कदलीफलम्",
-            "आम"
+            "आम्रम्"          
         ],
         "pairs": {
-            "सेव": "apple.jpg",
+            "सेवम्": "apple.jpg",
             "कदलीफलम्": "banana.jpg",
-            "आम": "mango.png"
+            "आम्रम्": "mango.png"        
         }
     }
 ,
       "medium": {
         "images": [
-          "orange.jpg",
-          "grape.jpg",
-          "pineapple.jpg"
+          "orange.png",
+          "dates.png",
+          "pineapple.png",
+          "papaya.png",
+          "blackberry.png"
         ],
         "sanskrit_names": [
-          "संतरा",
-          "अंगूर",
-          "अनानास"
-        ]
+          "नारङ्गम्",
+          "खर्जुरम्",
+          "अनासम्",
+          "रक्तफल",
+          "जम्बुफलम्"
+        ],
+        "pairs": {
+          "नारङ्गम्": "orange.png",
+          "खर्जुरम्": "dates.png",
+          "अनासम्": "pineapple.png" ,
+          "रक्तफल": "papaya.png" ,
+          "जम्बुफलम्":"blackberry.png"    
+      }
       },
       "hard": {
         "images": [
-          "pomegranate.jpg",
-          "papaya.jpg",
-          "jackfruit.jpg"
+          "strawberry.png",
+          "pear.png",
+          "guava.png"
         ],
         "sanskrit_names": [
-          "अनार",
-          "पपीता",
-          "कटहल"
-        ]
+          "तृण-बदरम्",
+          "अमृतफलम्",
+          "आग्रलम्"
+        ],
+        "pairs": {
+          "तृण-बदरम्": "strawberry.png",
+          "अमृतफलम्": "pear.png",
+          "आग्रलम्": "guava.png"        
+      }
       }
     },
     "vegetables": {
       "easy": {
         "images": [
-          "carrot.jpg",
-          "potato.jpg",
-          "tomato.jpg"
+          "potato.png",
+          "reddish.png",
+          "ladyfinger.png"
         ],
         "sanskrit_names": [
-          "गाजर",
-          "आलू",
-          "टमाटर"
-        ]
+          "आलुकम्",
+          "मूलकम्",
+          "भिण्डिका"
+        ],
+        "pairs": {
+            "आलुकम्": "potato.png",
+            "मूलकम्": "reddish.png",
+            "भिण्डिका": "ladyfinger.png"        
+        }
       },
       "medium": {
         "images": [
@@ -84,15 +105,20 @@
     "flowers": {
       "easy": {
         "images": [
-          "rose.jpg",
-          "lotus.jpg",
-          "sunflower.jpg"
+          "rose.png",
+          "lotus.png",
+          "sunflower.png"
         ],
         "sanskrit_names": [
-          "गुलाब",
-          "कमल",
-          "सूरजमुखी"
-        ]
+          "पाटलम् ",
+          "कमलम्",
+          "सूर्यकान्ति"
+        ],
+        "pairs": {
+            "पाटलम्": "rose.png",
+            "कमलम्": "lotus.png",
+            "सूर्यकान्ति": "sunflower.png"        
+        }
       },
       "medium": {
         "images": [
@@ -122,15 +148,20 @@
     "animals": {
       "easy": {
         "images": [
-          "dog.jpg",
-          "cat.jpg",
-          "cow.jpg"
+          "deer.png",
+          "lion.png",
+          "cow.png"
         ],
         "sanskrit_names": [
-          "कुत्ता",
-          "बिल्ली",
-          "गाय"
-        ]
+          "मृगः",
+          "सिंहः",
+          "धेनुः"
+        ],
+        "pairs": {
+            "मृगः": "deer.png",
+            "सिंहः": "lion.png",
+            "धेनुः": "cow.png"        
+        }
       },
       "medium": {
         "images": [
