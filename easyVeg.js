@@ -15,6 +15,8 @@ document.addEventListener("DOMContentLoaded", async function () {
         let images = [...vegetables.images];
         let pairs = { ...vegetables.pairs };
 
+        let correctMatches = 0;  // Counter for correct matches
+
         // Shuffle the names and images
         shuffleArray(sanskritNames);
         shuffleArray(images);
@@ -43,7 +45,7 @@ document.addEventListener("DOMContentLoaded", async function () {
             imgElement.classList.add("veg-image");
 
             const messageElement = document.createElement("p");
-            messageElement.classList.add("feedback");
+            //messageElement.classList.add("feedback");
             messageElement.textContent = ""; // Initially empty
             
             imgWrapper.appendChild(imgElement);
@@ -64,18 +66,28 @@ document.addEventListener("DOMContentLoaded", async function () {
             const draggedName = event.dataTransfer.getData("text");
             const dropzone = event.target.closest(".dropzone");
             const droppedImage = dropzone.dataset.image;
-            const feedback = dropzone.querySelector(".feedback");
+           // const feedback = dropzone.querySelector(".feedback");
 
             if (pairs[draggedName] === droppedImage) {
                 dropzone.style.backgroundColor = "lightgreen";
-                feedback.textContent = "✅ Correct!";
-                feedback.style.color = "green";
+               // feedback.textContent = "✅ Correct!";
+               // feedback.style.color = "green";
                 correctSound.play();  // Play correct answer sound
+                correctMatches++; // Increase the counter
+                checkCompletion(); // Check if all matches are correct
             } else {
                 dropzone.style.backgroundColor = "lightcoral";
-                feedback.textContent = "❌ Try Again!";
-                feedback.style.color = "red";
+                //feedback.textContent = "❌ Try Again!";
+                //feedback.style.color = "red";
                 wrongSound.play();  // Play wrong answer sound
+            }
+        }
+
+        function checkCompletion() {
+            if (correctMatches === sanskritNames.length) {
+                setTimeout(() => {
+                    window.location.href = "Success.html"; // Redirect after all correct
+                }, 1000); // Delay for better user experience
             }
         }
 

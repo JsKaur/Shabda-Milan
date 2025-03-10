@@ -15,19 +15,37 @@ document.addEventListener("DOMContentLoaded", async function () {
         let images = [...fruits.images];
         let pairs = { ...fruits.pairs };
 
+        let correctMatches = 0;  // Counter for correct matches
+
+
         // Shuffle the names and images
         shuffleArray(sanskritNames);
         shuffleArray(images);
 
-        // Create draggable name elements
+        // Create draggable name elements with speech button
         sanskritNames.forEach(name => {
+            const nameContainer = document.createElement("div");
+            nameContainer.classList.add("name-item");
+
             const nameElement = document.createElement("div");
             nameElement.classList.add("draggable");
             nameElement.textContent = name;
+            // creating a name 
             nameElement.draggable = true;
             nameElement.dataset.name = name;
             nameElement.addEventListener("dragstart", dragStart);
-            namesContainer.appendChild(nameElement);
+
+            // Speech button
+            const speakButton = document.createElement("button");
+            speakButton.textContent = "🔊";
+            speakButton.classList.add("speak-button");
+            speakButton.onclick = function () {
+                speakSanskrit(name);
+            };
+
+            nameContainer.appendChild(speakButton);
+            nameContainer.appendChild(nameElement);
+            namesContainer.appendChild(nameContainer);
         });
 
         // Create droppable image containers with feedback messages
@@ -43,7 +61,7 @@ document.addEventListener("DOMContentLoaded", async function () {
             imgElement.classList.add("fruit-image");
 
             const messageElement = document.createElement("p");
-            messageElement.classList.add("feedback");
+            //messageElement.classList.add("feedback");
             messageElement.textContent = ""; // Initially empty
             
             imgWrapper.appendChild(imgElement);
@@ -64,20 +82,32 @@ document.addEventListener("DOMContentLoaded", async function () {
             const draggedName = event.dataTransfer.getData("text");
             const dropzone = event.target.closest(".dropzone");
             const droppedImage = dropzone.dataset.image;
-            const feedback = dropzone.querySelector(".feedback");
+           // const feedback = dropzone.querySelector(".feedback");
 
             if (pairs[draggedName] === droppedImage) {
                 dropzone.style.backgroundColor = "lightgreen";
-                feedback.textContent = "✅ Correct!";
-                feedback.style.color = "green";
+                //feedback.textContent = "✅ Correct!";
+                //feedback.style.color = "green";
                 correctSound.play();  // Play correct answer sound
+                correctMatches++; // Increase the counter
+                checkCompletion(); // Check if all matches are correct
             } else {
                 dropzone.style.backgroundColor = "lightcoral";
-                feedback.textContent = "❌ Try Again!";
-                feedback.style.color = "red";
+                //feedback.textContent = "❌ Try Again!";
+                //feedback.style.color = "red";
                 wrongSound.play();  // Play wrong answer sound
             }
         }
+
+        function checkCompletion() {
+            if (correctMatches === sanskritNames.length) {
+                setTimeout(() => {
+                    window.location.href = "Success.html"; // Redirect after all correct
+                }, 1000); // Delay for better user experience
+            }
+        }
+
+
 
         function shuffleArray(array) {
             for (let i = array.length - 1; i > 0; i--) {
@@ -85,6 +115,12 @@ document.addEventListener("DOMContentLoaded", async function () {
                 [array[i], array[j]] = [array[j], array[i]];
             }
         }
+
+        // Text-to-Speech function
+        function speakSanskrit(text) {
+            responsiveVoice.speak(text, "Hindi Female");
+        }
+
     } catch (error) {
         console.error("Error loading data:", error);
     }

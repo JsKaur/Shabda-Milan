@@ -85,7 +85,7 @@ h2 {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    bottom: 200px; /* Adjust this value to fit within the road image */
+    bottom: 100px; /* Adjust this value to fit within the road image */
     padding: 10px 20px;
     font-size: 1.2rem;
     background: linear-gradient(rgb(76, 220, 228), rgb(94, 67, 193), rgb(71, 11, 113));
@@ -97,4 +97,35 @@ h2 {
 
 .start:hover {
     background: rgb(143, 143, 227);
+}
+h3{
+    position: absolute;
+    top:80%;
+    left:45%;
+    font-size:2rem;
+    font-family: "Roboto Slab", serif;
+    background: linear-gradient(rgb(76, 220, 228), rgb(94, 67, 193), rgb(71, 11, 113));
+    -webkit-background-clip: text;
+    color: transparent;
+}
+/* p{
+    position: absolute;
+    top: 83%;
+    left:30%;
+} */
+
+p {
+    position: absolute;
+    top: 85%; /* Adjust positioning */
+    left: 50%; /* Center alignment */
+    transform: translateX(-50%); /* Ensure it's properly centered */
+    font-size: 1.2rem;
+    line-height: 1.6; /* Improve spacing between lines */
+    text-align: center;
+    width: 70%; /* Control width to avoid stretching */
+    color: #333; /* Darker color for better readability */
+    background-color: rgba(255, 255, 255, 0.8); /* Light background to improve contrast */
+    padding: 15px;
+    border-radius: 10px; /* Smooth rounded corners */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Soft shadow for a subtle lift */
 }

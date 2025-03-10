@@ -1,0 +1,55 @@
+body {
+    background: url('images/over.webp') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 50px;
+}
+#gif{
+    position:absolute;
+    left:70%;
+    top:30%;
+}
+
+#again{
+    position:absolute;
+    left:40%;
+    top:70%;
+    background-color: #4c9baf;
+    color: white;
+    padding: 10px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+#home{
+    position:absolute;
+    left:50%;
+    top:70%;
+    background-color: #4c9baf;
+    color: white;
+    padding: 10px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+#again:hover{
+    background-color: #77adba;
+    color: white;
+}
+
+#home:hover{
+    background-color: #77adba;
+    color: white;
+}

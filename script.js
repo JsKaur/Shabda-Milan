@@ -1,6 +1,10 @@
 document.addEventListener("DOMContentLoaded", function() {
     const carImages = document.querySelectorAll('.car-image');
     const roadImage = document.querySelector('.road-image');
+
+
+    let selectedLevel = "";
+    let selectedCategory = "";
     
     window.addEventListener('scroll', function() {
         const scrollPosition = window.scrollY;
@@ -37,13 +41,15 @@ document.addEventListener("DOMContentLoaded", function() {
             carImages[1].classList.remove('visible');
             carImages[2].classList.remove('visible');
         }
+
+
     });
 
     // Initially show the first car
     carImages[0].classList.add('visible');
 
 
-
+    
 
 
 });

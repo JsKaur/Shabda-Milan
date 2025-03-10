@@ -45,17 +45,23 @@
         "images": [
           "strawberry.png",
           "pear.png",
-          "guava.png"
+          "guava.png",
+          "pomegranate.png",
+          "cherry.png"  
         ],
         "sanskrit_names": [
           "तृण-बदरम्",
           "अमृतफलम्",
-          "आग्रलम्"
+          "आग्रलम्",
+          "दाडिमः",
+          "प्रबदरम्"
         ],
         "pairs": {
           "तृण-बदरम्": "strawberry.png",
           "अमृतफलम्": "pear.png",
-          "आग्रलम्": "guava.png"        
+          "आग्रलम्": "guava.png" ,
+          "दाडिमः": "pomegranate.png",
+          "प्रबदरम्":"cherry.png"      
       }
       }
     },
@@ -79,27 +85,49 @@
       },
       "medium": {
         "images": [
-          "broccoli.jpg",
-          "spinach.jpg",
-          "cauliflower.jpg"
+          "cabbage.png",
+          "onion.png",
+          "bitter.png",
+          "garlic.png",
+          "spinach.png"
         ],
         "sanskrit_names": [
-          "ब्रोकोली",
-          "पालक",
-          "फूलगोभी"
-        ]
+          "केम्बुकम्",
+          "पलाण्डुः",
+          "कारबेल्लम्",
+          "लशुनम्",
+          "पालक्या"
+        ],
+        "pairs": {
+            "केम्बुकम्": "cabbage.png",
+            "पलाण्डुः": "onion.png",
+            "कारबेल्लम्": "bitter.png",
+            "लशुनम्": "garlic.png",
+            "पालक्या": "spinach.png"     
+        }
       },
       "hard": {
         "images": [
-          "artichoke.jpg",
-          "asparagus.jpg",
-          "okra.jpg"
+          "tomato.png",
+          "brinjal.png",
+          "cauliflower.png",
+          "mushroom.png",
+          "pumpkin.png"
         ],
         "sanskrit_names": [
-          "काँटेदार फूल",
-          "शतावरी",
-          "भिंडी"
-        ]
+          "रक्तफलम्",
+          "वृन्ताकम्",
+          "पुष्पशाकम्",
+          "छत्त्राकम्",
+          "कुष्माण्ड"
+        ],
+        "pairs": {
+            "रक्तफलम्": "tomato.png",
+            "वृन्ताकम्": "brinjal.png",
+            "पुष्पशाकम्": "cauliflower.png",
+            "छत्त्राकम्": "mushroom.png",
+            "कुष्माण्ड": "pumpkin.png"   
+        }
       }
     },
     "flowers": {
@@ -110,7 +138,7 @@
           "sunflower.png"
         ],
         "sanskrit_names": [
-          "पाटलम् ",
+          "पाटलम्",
           "कमलम्",
           "सूर्यकान्ति"
         ],
@@ -122,27 +150,49 @@
       },
       "medium": {
         "images": [
-          "orchid.jpg",
-          "daisy.jpg",
-          "tulip.jpg"
+          "jasmine.png",
+          "daisy.png",
+          "poppy.png",
+          "tulip.png",
+          "hibiscus.png"
         ],
         "sanskrit_names": [
-          "ऑर्किड",
-          "गुलबहार",
-          "ट्यूलिप"
-        ]
+          "जातीपुष्पम्",
+          "भृङ्गराज",
+          "खसखसः",
+          "कन्द पुष्पम्",
+          "चित्रपुष्पी"
+        ],
+        "pairs": {
+            "जातीपुष्पम्": "jasmine.png",
+            "भृङ्गराज": "daisy.png",
+            "खसखसः": "poppy.png",
+            "कन्द पुष्पम्":"tulip.png" ,
+            "चित्रपुष्पी":"hibiscus.png"    
+        }
       },
       "hard": {
         "images": [
-          "lily.jpg",
-          "hibiscus.jpg",
-          "marigold.jpg"
+          "lavender.jpg",
+          "marigold.jpg",
+          "dahlia.jpg",
+          "daffodil.jpg",
+          "lily.jpg"
         ],
         "sanskrit_names": [
-          "कुमुद",
-          "गुड़हल",
-          "गेंदा"
-        ]
+          "लैवेंडरः",
+          "गन्धपुष्पम्",
+          "दलियापुष्पम्",
+          "नलिनी",
+          " कुमुदः"
+        ],
+        "pairs": {
+            "लैवेंडरः": "lavender.jpg",
+            "गन्धपुष्पम्": "marigold.jpg",
+            "दलियापुष्पम्": "dahlia.jpg",
+            "नलिनी":"daffodil.jpg",
+            " कुमुदः":"lily.jpg"    
+        }
       }
     },
     "animals": {
@@ -165,27 +215,49 @@
       },
       "medium": {
         "images": [
-          "elephant.jpg",
-          "lion.jpg",
-          "tiger.jpg"
+          "crocodile.png",
+          "tiger.png",
+          "bear.png",
+          "cat.png",
+          "horse.png"
         ],
         "sanskrit_names": [
-          "हाथी",
-          "सिंह",
-          "बाघ"
-        ]
+          "मकरः",
+          "व्याघ्रः",
+          "भल्लूकः",
+          "बिडालः",
+          "अश्वः"
+        ],
+        "pairs": {
+            "मकरः": "crocodile.png",
+            "व्याघ्रः": "tiger.png",
+            "भल्लूकः": "bear.png" ,
+            "बिडालः":"cat.png",
+            "अश्वः":"horse.png"       
+        }
       },
       "hard": {
         "images": [
-          "giraffe.jpg",
-          "kangaroo.jpg",
-          "koala.jpg"
+          "pig.png",
+          "squirrel.png",
+          "donkey.png",
+          "leopard.png",
+          "bull.png"
         ],
         "sanskrit_names": [
-          "गिराफ़",
-          "कंगारू",
-          "कोआला"
-        ]
+          "वराहः",
+          "चिक्रोडः",
+          "गर्दभः",
+          "तरक्षु",
+          "वृषभः"
+        ],
+        "pairs": {
+          "वराहः": "pig.png",
+          "चिक्रोडः": "squirrel.png",
+          "गर्दभः": "donkey.png" ,
+          "तरक्षु":"leopard.png",
+          "वृषभः":"bull.png"       
+      }
       }
     }
   }
